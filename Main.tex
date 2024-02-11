@@ -1,0 +1,64 @@
+\documentclass[conference]{IEEEtran}
+% \IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Cuisine Recommendation System}
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Himang Chandra Garg}
+\IEEEauthorblockA{\textit{Computer Science and Engineering} \\
+\textit{Indraprastha Institute of Information Technology}\\
+Roll no.- 2022214 \\
+himang22214@iiitd.ac.in}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Nishil Agarwal}
+\IEEEauthorblockA{\textit{Computer Science and Artificial Intelligence} \\
+\textit{Indraprastha Institute of Information Technology}\\
+Roll no.- 2022334 \\
+nishil22334@iiitd.ac.in}
+}
+
+\maketitle
+
+\section{Problem Statement}
+The project aims to develop a personalized cuisine recommendation system, addressing the challenge of users finding recipes that align with their preferences and dietary needs. The system will utilize user flavor profiles, recipe attributes, calories, prep time, etc., to provide tailored recipe suggestions from diverse culinary traditions. Key objectives include improving user experience and assisting users in discovering relevant recipes efficiently.
+\\
+\section{Methods and Metrics}
+\subsection{Content based approach : Count Vectorizer for Feature Extraction}
+
+Our system employs the count vectorizer technique to extract features from user food choices, enabling the recommendation of top options based on preferences such as prep time, ingredients, and flavor profile. These preferences are gathered from previous food selections, following a content-based approach. Converting food attributes into numerical vectors through Count Vectorization allows for similarity calculations, typically utilizing cosine similarity, to recommend similar food items effectively.
+\\
+\subsection{Cosine Similarity:} 
+Given our utilization of count vectorization for feature extraction in our content-based model, cosine similarity emerges as a valuable tool. By comparing the vectors representing different food attributes, cosine similarity enables us to identify similar food items to those preferred by the user. This approach enhances the precision of our recommendations, ensuring alignment with the user's tastes and preferences.
+\\
+\subsection{Mean Average Precision:}
+We are thinking about using the Mean Average Precision (MAP) technique to gauge the accuracy of our food recommendations in future.
+\\
+\subsection{Metric: Recipe Attributes}
+We shall consider recipe attributes like preparation time, ingredients, calorie value for matching similar items.
+\\
+\subsection{Metric: Flavor Profiles}
+We will take into account whether user likes spicy/sweet food etc. before suggesting him meals.
+\\
+\subsection{Metric: User Feedback}
+We are planning to give suggestions based on constructive feedback from users. they will tell us which suggestions they liked and which they didn't. This will enable us to improve our suggestions for the next time.
+\\\\
+\section{Dataset}
+We are using a Kaggle-sourced dataset comprising of a diverse collection of Indian food recipes showcasing various regional cuisines and culinary traditions. Alongside recipes and ingredients, the dataset includes other information like prep time, flavor profiles, and cuisine style, offering comprehensive insights for recipe analysis and recommendation.
+It contains 250+ entries for various dishes. 
+\\\\
+\url{https://www.kaggle.com/datasets/kritirathi/indian-food-dataset-with/data}
+\\\\
+\section{Results}
+After multiple rounds of suggesting personalized food options, our project aims to develop a clear classification of each user's preferred food types. Identifying patterns in user preferences will enable us to deliver more accurate and tailored recommendations. Hence, if a new item gets added to the dataset, we will be able to tell by comparing it to user’s choices whether he will like it or not.
+
+\end{document}
