@@ -1,7 +1,7 @@
 # Cuisine Recommendation System
 
 ## Overview
-This project is an undergraduate project developed as part of the Statistical Machine Learning course. The aim is to create a recommendation system for cuisines using the Food.com dataset, which includes recipes and reviews.
+This project is an undergraduate project developed using concepts of Statistical Machine Learning. The aim is to create a recommendation system for cuisines using the Food.com dataset, which includes recipes and reviews.
 
 ## How to Use
 
